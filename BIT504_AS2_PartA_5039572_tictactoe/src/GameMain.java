@@ -18,7 +18,7 @@ public class GameMain extends JPanel implements MouseListener{
 
 	//constants for dimensions used for drawing
 	//cell width and height
-	public static final int CELL_SIZE = 100;
+	public static final int CELL_SIZE = 200;
 	//drawing canvas
 	public static final int CANVAS_WIDTH = CELL_SIZE * COLS;
 	public static final int CANVAS_HEIGHT = CELL_SIZE * ROWS;
@@ -97,7 +97,7 @@ public class GameMain extends JPanel implements MouseListener{
 	public void paintComponent(Graphics g) {
 		//fill background and set colour to white
 		super.paintComponent(g);
-		setBackground(Color.GREEN);
+		setBackground(Color.YELLOW);
 		//ask the game board to paint itself
 		board.paint(g);
 		
